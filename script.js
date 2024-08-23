@@ -6,7 +6,7 @@ function search(event) {
     const anyWords = document.getElementById('anyWords').value.trim();
     const noneWords = document.getElementById('noneWords').value.trim();
 
-    let query = `https://www.ufsm.br/pro-reitorias/proplan/atos-normativos`;
+    let query = `https://www.ufsm.br/pro-reitorias/proplan/`;
 
     if (allWords) {
         query += ` ${allWords}`;
