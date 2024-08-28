@@ -2,32 +2,21 @@ body {
     font-family: Times New Roman, Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #add8e6; /* Azul claro */
-}
-
-.navbar {
+    background-color: #e0f7fa; /* Azul claro */
     display: flex;
-    justify-content: flex-end; /* Alinha a logo à direita */
+    justify-content: center;
     align-items: center;
-    background-color: #007bff; /* Azul da navbar */
-    padding: 10px;
-    border-bottom: 2px solid #0056b3; /* Borda inferior para efeito adicional */
-}
-
-.logo {
-    width: 100px;
-    height: auto;
+    height: 100vh; /* Faz a altura ocupar a tela inteira */
 }
 
 .container {
-    text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px; /* Ajuste para permitir espaço para a imagem */
-    margin: 20px auto;
+    margin: 0 auto; /* Remove margem padrão */
 }
 
 h1 {
@@ -38,17 +27,11 @@ h1 {
 
 .form-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Alinha os itens verticalmente */
 }
 
 .form-fields {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.form-image {
-    flex-shrink: 0;
+    margin-bottom: 15px;
 }
 
 .form-group {
@@ -63,7 +46,7 @@ label {
 }
 
 input[type="text"] {
-    width: calc(100% - 22px);
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -82,3 +65,4 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
