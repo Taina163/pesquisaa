@@ -6,7 +6,7 @@ function search(event) {
     const anyWords = document.getElementById('anyWords').value.trim();
     const noneWords = document.getElementById('noneWords').value.trim();
 
-    let query = site:ufsm.br/pro-reitorias/proplan/;
+    let query = `site:ufsm.br/pro-reitorias/proplan/`;
 
     if (allWords) {
         query += ` ${allWords}`;
@@ -21,6 +21,6 @@ function search(event) {
         query += ` -(${noneWords.split(' ').join(' -')})`;
     }
 
-    const url = https://www.google.com/search?q=${encodeURIComponent(query)};
+    const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
     window.open(url, '_blank');
 }
