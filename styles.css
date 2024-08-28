@@ -1,12 +1,22 @@
 body {
     font-family: Times New Roman, Times, serif;
-    background-color: #f4f4f9;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #add8e6; /* Azul claro */
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Alinha a logo à direita */
+    align-items: center;
+    background-color: #007bff; /* Azul da navbar */
+    padding: 10px;
+    border-bottom: 2px solid #0056b3; /* Borda inferior para efeito adicional */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
 }
 
 .container {
@@ -16,13 +26,29 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 400px;
+    max-width: 600px; /* Ajuste para permitir espaço para a imagem */
+    margin: 20px auto;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #8FBC8F;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-fields {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-image {
+    flex-shrink: 0;
 }
 
 .form-group {
